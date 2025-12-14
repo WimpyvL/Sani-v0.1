@@ -24,7 +24,7 @@ This project’s names, logos, and brand assets (the “Marks”) are protected 
 
 ## License Interplay
 - Trademark rights are separate from copyright and software/content licenses.
-- The software may be licensed under the Business Source License 1.1 for code and CC BY-NC-ND 4.0 for documentation; those licenses do not grant any rights to use the Marks.
+- The software is licensed under Apache License 2.0 for code and CC BY 4.0 for documentation; those licenses do not grant any rights to use the Marks.
 
 ## Permissions and Contact
 To request permission for specific uses of the Marks, please open an issue in this repository or contact the project maintainers.

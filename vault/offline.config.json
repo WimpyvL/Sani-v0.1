@@ -1,0 +1,8 @@
+{
+    "offlineThreshold": 0.75,
+    "cacheSize": 500,
+    "knowledgeBasePath": "vault/knowledge_base.json",
+    "vectorDbPath": "data/offline_vectors.db",
+    "stateFile": "data/offline_state.json",
+    "enableSarcasticGuard": true
+}

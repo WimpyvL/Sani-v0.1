@@ -1,0 +1,7 @@
+/* Sani Custom Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent; /* Handled by App container */
+  font-family: monospace;
+}

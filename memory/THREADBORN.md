@@ -199,7 +199,7 @@ If the system starts “living in ThreadBorn” instead of shipping:
   **Evidence:** rituals/SANI_META_RITUALS.md, states/META_BEE.md, memory/VAULT_REGISTRY.md
   **Confidence:** high
   **Links:** rituals/SANI_META_RITUALS.md#meta-ritual-4--closure-seal, states/META_BEE.md#meta-bee-tone-and-voice
-  **PromotionStatus:** candidate
+  **Promotion Status:** candidate
   **Notes:** Meta-Bee callout should be sharp and a little unhinged (“Stop worshipping the lore, ship the build”) before forcing closure.
 
 ---

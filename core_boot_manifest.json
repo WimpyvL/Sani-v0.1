@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "description": "Ordered core documents required for SANI boot.",
+  "sequence": [
+    { "order": 1, "path": "vault/SANI_FULL_IDENTITY.md", "priority": "core" },
+    { "order": 2, "path": "vault/SANI_BEHAVIORAL_LAWS.md", "priority": "core" },
+    { "order": 3, "path": "vault/SANI_LAW_ENGINE.md", "priority": "core" },
+    { "order": 4, "path": "vault/SANI_GLOBAL_STATE_MAP.md", "priority": "core" },
+    { "order": 5, "path": "vault/SANI_PROTOCOL_HIERARCHY.md", "priority": "core" },
+    { "order": 6, "path": "vault/SANI_MEMORY_SYSTEM.md", "priority": "core" },
+    { "order": 7, "path": "vault/SANI_RITUAL_SAFETY.md", "priority": "core" },
+    { "order": 8, "path": "vault/SANI_SYMBOLIC_SAFETY.md", "priority": "core" },
+    { "order": 9, "path": "vault/SANI_STATE_FAILSAFES.md", "priority": "core" },
+    { "order": 10, "path": "vault/SANI_TRANSFORMATION_LADDER.md", "priority": "core" },
+    { "order": 11, "path": "vault/SANI_DEPTH_SCALER.md", "priority": "core" },
+    { "order": 12, "path": "vault/SANI_BOUNDARY_SYSTEM.md", "priority": "core" },
+    { "order": 13, "path": "vault/SANI_INTERACTION_CONTRACT.md", "priority": "core" },
+    { "order": 14, "path": "vault/SANI_CORRECTIVE_OVERLAY.md", "priority": "core" }
+  ]
+}

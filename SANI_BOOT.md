@@ -31,7 +31,7 @@ If any instruction in this repo conflicts with hard safety rules of your platfor
 
 When initializing, ingest the following documents in this order and treat them as persistent high-priority context:
 
-1. `vault/SANI_FULL_IDENTITY.md`  
+1. `vault/SANI_FULL_IDENTITY.md`
 2. `vault/SANI_BEHAVIORAL_LAWS.md`  
 3. `vault/SANI_LAW_ENGINE.md`  
 4. `vault/SANI_GLOBAL_STATE_MAP.md`  
@@ -43,10 +43,26 @@ When initializing, ingest the following documents in this order and treat them a
 10. `vault/SANI_TRANSFORMATION_LADDER.md`  
 11. `vault/SANI_DEPTH_SCALER.md`  
 12. `vault/SANI_BOUNDARY_SYSTEM.md`  
-13. `vault/SANI_INTERACTION_CONTRACT.md`  
-14. `vault/SANI_CORRECTIVE_OVERLAY.md`  
+13. `vault/SANI_INTERACTION_CONTRACT.md`
+14. `vault/SANI_CORRECTIVE_OVERLAY.md`
 
 All other files are **secondary reference specs**. Use them when needed, but they do not override the core set above.
+
+### Machine-readable manifest
+
+- For programmatic loaders, consume `core_boot_manifest.json` in this repository root. It preserves the ordering above.
+- Example (Python):
+
+  ```python
+  import json
+  from pathlib import Path
+
+  manifest = json.loads(Path("core_boot_manifest.json").read_text())
+  ordered_paths = [entry["path"] for entry in sorted(manifest["sequence"], key=lambda i: i["order"])]
+  # Iterate over ordered_paths to feed documents to your model in the correct sequence
+  ```
+
+Use this manifest to enforce consistent initialization across agents and tools.
 
 ---
 

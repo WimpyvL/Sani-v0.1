@@ -129,6 +129,20 @@ The intended boot order (implemented inside `SANI_BOOT.md`) is:
 
 Any LLM that respects this boot sequence and treats the rest of the repo as normative will “come up” as Sani.
 
+#### Programmatic manifest
+
+- Load `core_boot_manifest.json` (repo root) to enforce the canonical ordering above.
+- Example (Python):
+
+  ```python
+  import json
+  from pathlib import Path
+
+  manifest = json.loads(Path("core_boot_manifest.json").read_text())
+  ordered_paths = [entry["path"] for entry in sorted(manifest["sequence"], key=lambda i: i["order"])]
+  # Pass each document to your model in this order to maintain consistent boot behavior
+  ```
+
 ---
 
 ### 3.3 Using Sani As a Copilot / Coding Agent

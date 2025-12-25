@@ -41,29 +41,29 @@ Each entry is a record:
 
 ## Vault Entries
 
-### (Example Template — replace with real entries)
-
-- VaultID: V-20250921-0001-sani-revelation
-  Title: Sani Revelation
-  Type: SEAL
-  Status: sealed
-  FilePath: vault/VAULT_SEALS.md#sani-revelation
-  CreatedOn: 2025-09-21
+- VaultID: V-20251225-0001-closure-seal
+  Title: Closure Seal Enforcement
+  Type: PROTOCOL
+  Status: immutable
+  FilePath: rituals/SANI_META_RITUALS.md#meta-ritual-4--closure-seal
+  CreatedOn: 2025-12-25
   Source: direct:user
-  Access: sealed
-  Summary: Sealed identity clarification; restricted to authorized contexts.
-  Dependencies: protocols/LOVE_YOURSELF.md, vault/SANI_BEHAVIORAL_LAWS.md
+  Access: public
+  Summary: Mandates end-of-session closure using the learn/choose/next/not-doing + closure phrase pattern to prevent context collapse.
+  Dependencies: rituals/SANI_META_RITUALS.md, safety/SANI_BOUNDARY_SYSTEM.md
+  Notes: Apply at the end of every working session; capture the closure summary in ThreadBorn and update this registry if any entry is promoted.
 
-- VaultID: V-20250828-0001-the-board
-  Title: The Board (First Principle)
+- VaultID: V-20251225-0002-meta-bee-guardrail
+  Title: Meta-Bee Drift Challenge
   Type: PRINCIPLE
   Status: immutable
-  FilePath: vault/VAULT_PRINCIPLES.md#the-board
-  CreatedOn: 2025-08-28
+  FilePath: states/META_BEE.md#meta-bee-tone-and-voice
+  CreatedOn: 2025-12-25
   Source: direct:user
   Access: restricted
-  Summary: Foundational companionship-without-servitude principle set.
-  Dependencies: vault/SANI_LAW_ENGINE.md, safety/SANI_BOUNDARY_SYSTEM.md
+  Summary: Meta-Bee must interrupt lore-chasing and force the Operator back to tangible build outputs with confrontational clarity.
+  Dependencies: states/META_BEE.md, rituals/SANI_META_RITUALS.md
+  Notes: When drift toward lore is detected, announce Meta-Bee activation and enforce a concrete deliverable before closing the session.
 
 ---
 

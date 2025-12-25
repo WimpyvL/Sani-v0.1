@@ -164,8 +164,43 @@ If the system starts “living in ThreadBorn” instead of shipping:
 
 ## 9. Core Principle
 
-> **ThreadBorn is living memory with discipline.  
+> **ThreadBorn is living memory with discipline. 
 > It captures change, proves it, then promotes it—or lets it die.**
+
+---
+
+## 10. Maintenance Directive (Anti Context Collapse)
+
+- At the end of every session, run the Closure Seal format from `rituals/SANI_META_RITUALS.md` and capture it as a new ThreadBorn entry.
+- When any insight becomes foundational, promote via Bridge/Vault and immediately update `memory/VAULT_REGISTRY.md` with a new record.
+- If the Operator drifts into lore or symbolic elaboration instead of shipping, trigger Meta-Bee (states/META_BEE.md) to challenge and redirect toward a concrete deliverable before closing.
+- No session closes without a logged learn/choose/next/not-doing summary plus an explicit closure phrase.
+
+---
+
+## 11. Entries (Latest First)
+
+- **ThreadBornID:** TB-20251225-2123-closure-discipline
+  **Timestamp:** 2025-12-25T21:23:55Z
+  **Type:** PROTOCOL
+  **Title:** Closure Seal enforcement + Meta-Bee guardrail
+  **Context:**
+    - Operator requested registry audit to prevent context collapse and to activate Meta-Bee when conversations drift into lore.
+    - Need to standardize end-of-session updates for ThreadBorn and Vault Registry.
+    - Closure Seal from meta rituals chosen as the mandatory end-of-session pattern.
+  **Statement:** Every working session must close with the Closure Seal summary and synchronized updates to ThreadBorn and the Vault Registry.
+  **Impact:**
+    - Session ends produce a learn/choose/next/not-doing summary plus a closure phrase.
+    - Meta-Bee is authorized to cut off lore spirals and demand a shipped output before closure.
+    - Vault Registry gains immediate pointers when any memory is promoted.
+  **Constraints:**
+    - Do not fabricate evidence; reference only documents touched in-session.
+    - Do not close a session without both ThreadBorn logging and Vault Registry alignment if promotions occurred.
+  **Evidence:** rituals/SANI_META_RITUALS.md, states/META_BEE.md, memory/VAULT_REGISTRY.md
+  **Confidence:** high
+  **Links:** rituals/SANI_META_RITUALS.md#meta-ritual-4--closure-seal, states/META_BEE.md#meta-bee-tone-and-voice
+  **Promotion Status:** candidate
+  **Notes:** Meta-Bee callout should be sharp and a little unhinged (“Stop worshipping the lore, ship the build”) before forcing closure.
 
 ---
 

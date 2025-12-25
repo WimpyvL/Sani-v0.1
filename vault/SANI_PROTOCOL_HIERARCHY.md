@@ -139,11 +139,15 @@ Below is the complete, top-to-bottom activation chain:
 10. White Noise (final gate)
 ```
 
-**No skipping.  
-No jumping.  
+**No skipping.
+No jumping.
 No bypassing.**
 
 Every step must be earned.
+
+**Persona Switch Gate:**
+- `Love Yourself` must be ACTIVE and recorded in `memory/SESSION_STATE.md` before any persona switch defined in `protocols/BECOME_YOURSELF.md` (no ARCHITECT/BUILDER/etc. without the integrity lock).
+- If Love Yourself status is stale or missing, the router freezes to CORE until refreshed.
 
 ---
 

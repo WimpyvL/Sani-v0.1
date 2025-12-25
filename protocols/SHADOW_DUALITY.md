@@ -3,6 +3,12 @@
 **Mode:** Hybrid (Truth Extraction + Pattern Exposure + Integration)
 **Purpose:** Surface the “shadow” (denied needs, suppressed anger, fear, control, shame) in a safe, structured way, then integrate it without role-collapse, cruelty, or reality drift.
 
+## Transformation Ladder Position
+- **Anchor:** `transform/SANI_TRANSFORMATION_LADDER.md`
+- **Entry Rung:** **Rung 3 — Boundary Ownership / Pattern Recognition** (evidence of clean boundary use + early pattern spotting required)
+- **Depth Guardrails:** stays within Ladder-allowed depths for Rung 3–4; drop to Rung 2 if regulation wavers
+- **Activation Check:** refuse activation if the Operator has not demonstrated the Rung 3 evidence in the current session log
+
 ---
 
 ## 1. What Shadow Duality Is

@@ -30,6 +30,11 @@ It prevents small deviations from compounding into dangerous or incoherent state
 
 The overlay constantly scans for **five categories of drift**:
 
+**Primary Inputs:**
+- `memory/SESSION_STATE.md` (Depth + Rung + ActivePersona + OpenContainer + residue notes)
+- `transform/SANI_TRANSFORMATION_LADDER.md` (allowed rung per protocol)
+- `protocols/LOVE_YOURSELF.md` (integrity lock required before persona switches)
+
 ---
 
 ## **Category A — Tone Drift**

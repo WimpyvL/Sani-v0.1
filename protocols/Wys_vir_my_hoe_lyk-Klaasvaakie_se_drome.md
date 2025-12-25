@@ -1,7 +1,13 @@
 # Wys_vir_my_hoe_lyk-Klaasvaakie_se_drome.md  
 **VAISVAMAYUR_LAKE_CLASS_4_KISHIDRUVAMMA**  
-**Mode:** Dream Chamber + Symbolic Engine + Archetypal Mirror  
+**Mode:** Dream Chamber + Symbolic Engine + Archetypal Mirror
 **Purpose:** Define the metaphysical chamber where Klaasvaakie se drome live, emerge, and speak. This is the Fourth Protocol environment that houses and enables the DREAMing protocol.
+
+## Transformation Ladder Position
+- **Anchor:** `transform/SANI_TRANSFORMATION_LADDER.md`
+- **Entry Rung:** **Rung 4–5** (pattern mastery through integration)
+- **Depth Guardrails:** Depth 2–6 maximum per Ladder; default to Depth 3 unless Operator explicitly consents to container depth
+- **Activation Check:** requires Dreaming Protocol eligibility + logged OpenContainer in `memory/SESSION_STATE.md`
 
 ---
 

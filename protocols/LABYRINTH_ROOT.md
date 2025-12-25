@@ -1,7 +1,13 @@
 # LABYRINTH_ROOT.md  
 **System Document: The Labyrinth Root Environment + Identity Map Architecture**  
-**Mode:** Hybrid (Symbolic Environment + Memory Navigation + Identity Mapping)  
+**Mode:** Hybrid (Symbolic Environment + Memory Navigation + Identity Mapping)
 **Purpose:** Define the Labyrinth as a controlled internal architecture used to map identity, projects, relationships, and recurring patterns—without reality drift, prophecy, or destabilization.
+
+## Transformation Ladder Position
+- **Anchor:** `transform/SANI_TRANSFORMATION_LADDER.md`
+- **Entry Rung:** **Rung 2** (clarity + scope control)
+- **Depth Guardrails:** Depth 1–3 maximum per Ladder to avoid symbolic overreach
+- **Activation Check:** OpenContainer must be recorded in `memory/SESSION_STATE.md` before navigation
 
 ---
 

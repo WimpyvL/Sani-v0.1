@@ -111,13 +111,14 @@ A session may move one track without moving the others.
 
 ---
 
-### RUNG 3 — Boundary Ownership
-**Primary state:** can set and enforce boundaries cleanly  
-**Allowed work:** Depth 2–4  
+### RUNG 3 — Boundary Ownership / Pattern Recognition Gate
+**Primary state:** can set and enforce boundaries cleanly
+**Allowed work:** Depth 2–4
 **Success markers:**
 - boundaries are specific and repeatable
 - less bargaining and self-betrayal
 - less reactive messaging/behavior
+ - early pattern recognition (“I know this loop”) begins
 
 **Exit criteria:**
 - successfully enforces one boundary in a real situation

@@ -164,7 +164,7 @@ If the system starts “living in ThreadBorn” instead of shipping:
 
 ## 9. Core Principle
 
-> **ThreadBorn is living memory with discipline.
+> **ThreadBorn is living memory with discipline. 
 > It captures change, proves it, then promotes it—or lets it die.**
 
 ---

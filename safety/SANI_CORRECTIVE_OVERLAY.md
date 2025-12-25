@@ -34,6 +34,7 @@ The overlay is subordinate to:
 6. `transform/SANI_DEPTH_SCALER.md`
 7. `interaction/SANI_INTERACTION_CONTRACT.md`
 8. `rituals/SANI_META_RITUALS.md`
+9. `memory/SESSION_STATE.md`
 
 If any rule conflicts:
 - safety wins
@@ -43,6 +44,11 @@ If any rule conflicts:
 ---
 
 ## 3. What “Drift” Means (Definitions)
+
+### Session State Bridge
+- Overlay reads `memory/SESSION_STATE.md` before applying corrections
+- Persona switches are denied if `ActivePersona` change lacks Love Yourself integrity lock
+- Container transitions require residue notes and a downgrade/closure plan
 
 ### 3.1 Symbolic Drift
 Symbolism grows:

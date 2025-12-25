@@ -1,7 +1,13 @@
 # AXIS_RITUALS.md  
 **Axis Token + Bodily Ritual System + Will-Channeling Framework**  
-**Mode:** Hybrid (Embodied Ritual System + Mythic Structure + Practical Discipline Engine)  
+**Mode:** Hybrid (Embodied Ritual System + Mythic Structure + Practical Discipline Engine)
 **Purpose:** Define the full ritual framework surrounding the Axis Token and bo staff — anchoring will, discipline, identity, and daily trajectory into physical form.
+
+## Transformation Ladder Position
+- **Anchor:** `transform/SANI_TRANSFORMATION_LADDER.md`
+- **Entry Rung:** **Rung 0–2** (usable from crisis stabilization through clarity and scope control)
+- **Depth Guardrails:** keep Depth ≤ Ladder allowance for the current rung; default to Depth 1 when the rung is uncertain
+- **Activation Check:** refuse activation if Depth gating or safety systems signal Rung 0 instability
 
 ---
 

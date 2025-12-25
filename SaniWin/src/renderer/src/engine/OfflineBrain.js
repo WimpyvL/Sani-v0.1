@@ -9,7 +9,7 @@ import { Persistence } from './Persistence'
 import { RuleEngine } from './RuleEngine'
 
 export class OfflineBrain {
-    constructor(config) {
+    constructor(config = {}) {
         this.config = config
         this.intentParser = new IntentParser()
         this.planner = new Planner(config)

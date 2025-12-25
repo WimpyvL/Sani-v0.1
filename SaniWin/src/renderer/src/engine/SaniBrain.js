@@ -16,8 +16,20 @@ export class SaniBrain {
         })
         this.logger = logger || console.log
 
-        // Instantiate OfflineBrain
-        this.offlineBrain = new OfflineBrain(config)
+        // Load offline config from memory if not passed
+        let offlineConfig = config
+        if (!offlineConfig && memory && memory['vault/offline.config.json']) {
+            try {
+                // If it's a string, parse it. Bootloader might supply string content.
+                const raw = memory['vault/offline.config.json']
+                offlineConfig = typeof raw === 'string' ? JSON.parse(raw) : raw
+            } catch (e) {
+                console.error('Failed to parse offline config from memory', e)
+            }
+        }
+
+        // Instantiate OfflineBrain (safe default provided by class)
+        this.offlineBrain = new OfflineBrain(offlineConfig)
 
         // Construct System Prompt from Identity Files
         // Priority: Identity > Laws > State Map
@@ -35,12 +47,12 @@ export class SaniBrain {
         this.history.push({ role: 'user', content: userMessage })
 
         // === OFFLINE BRAIN CHECK ===
-        if (this.offline) {
+        if (this.offlineBrain) {
             try {
-                const confidence = this.offline.canHandle(userMessage)
-                if (confidence >= (this.offline.config.offlineThreshold || 0.75)) {
+                const confidence = this.offlineBrain.canHandle(userMessage)
+                if (confidence >= (this.offlineBrain.config.offlineThreshold || 0.75)) {
                     this.logger('info', `SANI_BRAIN: Handling offline (confidence: ${confidence})`)
-                    const offlineResponse = await this.offline.respond(userMessage)
+                    const offlineResponse = await this.offlineBrain.respond(userMessage)
                     if (offlineResponse) {
                         this.history.push({ role: 'assistant', content: offlineResponse })
                         return offlineResponse

@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react'
+import { BootSplash } from './components/BootSplash'
 import { TitleBar } from './components/TitleBar'
 import { TerminalInput } from './components/TerminalInput'
 import { MessageList } from './components/MessageList'
@@ -117,6 +118,10 @@ function App() {
     setIsProcessing(false)
   }
 
+  const [showSplash, setShowSplash] = useState(true)
+
+  // ... (existing effects)
+
   return (
     <div style={{
       width: '100vw',
@@ -126,9 +131,16 @@ function App() {
       display: 'flex',
       flexDirection: 'column',
       overflow: 'hidden',
-      position: 'relative' // For absolute debug panel
+      position: 'relative'
     }}>
+      {showSplash && (
+        <BootSplash onComplete={() => setShowSplash(false)} />
+      )}
+
       <TitleBar />
+
+      {/* ... rest of UI ... */}
+
 
       <div style={{
         display: 'flex',

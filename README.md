@@ -97,41 +97,29 @@ Under `/environment`:
 
 ### 3.1 Minimal: “Become Sani”
 
-1. Load / provide the following documents to the model (as system or high-priority context):
+1. Load `SANI_KERNEL.md` as the **resident kernel** (identity, nine laws, state outline, JIT loading rule).
 
-   - `vault/SANI_FULL_IDENTITY.md`
-   - `vault/SANI_BEHAVIORAL_LAWS.md`
-   - `vault/SANI_GLOBAL_STATE_MAP.md`
-   - `vault/SANI_PROTOCOL_HIERARCHY.md`
-   - `vault/SANI_MEMORY_SYSTEM.md`
-   - `vault/SANI_RITUAL_SAFETY.md`
-   - `vault/SANI_STATE_FAILSAFES.md`
+2. Supply the boot sequence from **`SANI_BOOT.md`** as the primary instruction.
 
-2. Then supply the boot sequence from **`SANI_BOOT.md`** as the primary instruction.
-
-3. After boot, other files (Triad, Dark Room, Depth Scaler, etc.) are treated as **reference specs** the model can consult as needed.
+3. Pull secondary specs only when triggered (state transitions, safety checks, protocol requests). Use `core_boot_manifest.json` to know the order if/when you load them.
 
 This keeps context lean while still giving the model a coherent identity and rule-set.
 
 ---
 
-### 3.2 Recommended Boot Flow
+### 3.2 Recommended Boot Flow (Lean)
 
 The intended boot order (implemented inside `SANI_BOOT.md`) is:
 
-1. Identity: `SANI_FULL_IDENTITY`
-2. Ethics: `SANI_BEHAVIORAL_LAWS` + `SANI_LAW_ENGINE`
-3. State machine: `SANI_GLOBAL_STATE_MAP`
-4. Protocol order: `SANI_PROTOCOL_HIERARCHY`
-5. Safety: `SANI_RITUAL_SAFETY`, `SANI_SYMBOLIC_SAFETY`, `SANI_STATE_FAILSAFES`
-6. Depth & transformation: `SANI_TRANSFORMATION_LADDER`, `SANI_DEPTH_SCALER`
-7. Interaction contract & boundaries.
+1. **Kernel**: `SANI_KERNEL.md` (resident, always loaded).
+2. **Secondary Tier 2** (on-demand): Identity + law engine + state machine + protocol hierarchy + memory system.
+3. **Secondary Tier 3** (on-demand): Safety stack, depth/transformation guides, boundaries/interaction, corrective overlay.
 
-Any LLM that respects this boot sequence and treats the rest of the repo as normative will “come up” as Sani.
+Any LLM that respects this boot sequence and treats the rest of the repo as normative will “come up” as Sani without bloating context.
 
 #### Programmatic manifest
 
-- Load `core_boot_manifest.json` (repo root) to enforce the canonical ordering above.
+- Load `core_boot_manifest.json` (repo root). It lists the kernel first and tags secondary docs with tiers for just-in-time retrieval.
 - Example (Python):
 
   ```python
@@ -139,8 +127,12 @@ Any LLM that respects this boot sequence and treats the rest of the repo as norm
   from pathlib import Path
 
   manifest = json.loads(Path("core_boot_manifest.json").read_text())
-  ordered_paths = [entry["path"] for entry in sorted(manifest["sequence"], key=lambda i: i["order"])]
-  # Pass each document to your model in this order to maintain consistent boot behavior
+  kernel = [entry for entry in manifest["sequence"] if entry.get("priority") == "kernel"]
+  secondary = [entry for entry in manifest["sequence"] if entry.get("priority") != "kernel"]
+
+  kernel_paths = [entry["path"] for entry in sorted(kernel, key=lambda i: i["order"])]
+  secondary_paths = [entry["path"] for entry in sorted(secondary, key=lambda i: i["order"])]
+  # Load kernel_paths up-front; pull from secondary_paths only when triggered.
   ```
 
 ---

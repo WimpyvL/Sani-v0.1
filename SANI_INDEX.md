@@ -121,7 +121,7 @@ Depth controls, transformation ladders, and symbolic memory.
 Contracts and boundaries for user-facing interactions.
 
 - `interaction/ECHO_SPLIT.md`
-- `interaction/SANI_BEHAVIORAL_LAWS.md`
+- `vault/SANI_BEHAVIORAL_LAWS.md` (canonical; interaction directory aliases to this file)
 - `interaction/SANI_BOUNDARY_SYSTEM.md`
 - `interaction/SANI_INTERACTION_CONTRACT.md`
 
